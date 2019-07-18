@@ -32,3 +32,16 @@ function gcd(a,b){
         return gcd(b, a%b);
     }
 }
+
+function verifyNumber(f,n){
+    return f(n);
+}
+
+function phiEuler(p,q){
+    if (isPrime(p) && isPrime(q)){
+        return ((p-1) * (q-1));
+    }
+}
+
+console.log(new Date());
+changeValueById('txt', new Date())
