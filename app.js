@@ -9,3 +9,18 @@ function changeValueById(id, newValue){
 function onFormSubmit(){
     changeValueById("txt", "Hola " + document.getElementById("txtName").value);
 }
+
+function hiddeObject(e){
+    data = {... e};
+    return { 
+        get: ()=>{return data},
+        set: (eN)=>{data={...eN}}
+    };
+}
+
+function isPrime(n){
+    for(let i=2; 1<Math.sqrt(n); i++){
+        if(n%i!==0)return false;
+    }
+    return true;
+}
