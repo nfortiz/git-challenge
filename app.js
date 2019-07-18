@@ -1,1 +1,6 @@
-document.getElementById("msg").innerText= "Hello v0.2" 
+var os = navigator.platform; 
+document.getElementById("msg").innerText='Hello, your os is '+ os;
+
+function changeValueById(id, newValue){
+    document.getElementById(id).innerHTML=newValue;
+}
