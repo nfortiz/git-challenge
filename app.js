@@ -1,1 +1,1 @@
-console.log('Holi :)')
+document.getElementById("msg").innerText= "Hello v0.2" 
